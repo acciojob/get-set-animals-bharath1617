@@ -8,7 +8,7 @@ class Animal {
    }
 
   makeSound() {
-    console.log("The " + this.species + " makes a sound.");
+    console.log("The " + this._species + " makes a sound.");
   }
 }
 
@@ -22,10 +22,7 @@ class Cat extends Animal {
 		console.log("purr");
 	}
 }
-var dog = new Dog("Dog");
-dog.bark();
-var cat = new Cat("cat");
-cat.purr();
+
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
